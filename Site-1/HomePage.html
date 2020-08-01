@@ -2,88 +2,103 @@
 <html lan='en'>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="OCA.css">
+		
 		<meta charset='UTF-8'/>
 		<title>
-			Talk Talk : Home Page
+			Talk Talk : Home
 		</title>
 	</head>
 	<body>
-		<center><table border=1>
-			<tr>
-				<td height="30" width="240">
-					<a href="Profile.html">
-						<img title="Profile" src="./Images/MyProfile.png" height="40" width="40">
+		<div class="custom-box pad">
+			<div class="custom-small pad">
+				<div class="profile-card">
+					<a href="Profile.html" class="design">
+						<img class="hover" title="Profile" src="./Images/MyProfile.png"/>
+						yash amethiya
 					</a>
-					&emsp;
-					&emsp;
-					&emsp;
-					&emsp;
-					<select title="options" name="form" onchange="location = this.value;">
-						<option value="HomePage.html">Menu</option>
-						<option value="HomePage.html">Home</option>
-						<option value="Profile.html">Profile</option>
-						<option value="FriendRequests.html">Friend Request</option>
-						<option value="NewFriends.html">New Friends</option>
-						<option value="Settings.html">Settings</option>
-						<option value="index.html">Logout</option>
-					</select>
-				</td>
-				<td rowspan=7>
-					<h1>Hello!!</h1>
-					<h2>Welcome, Let's Talk Talk</h2>
-					<center>
-						<img src="./Images/chat.gif" height="420" width="1000">
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<form action="SearchFriend.html" method="GET">
-						<input type="text"  title="Search Friends" width="30" placeholder="Search" required>
-						<input type="submit" value="Search" title="Search Friends">
+					<div class="dropdown" style="float:right;">
+					  <button class="dropbtn"><b style="font-size:20px;">. . .</b></button>
+					  <div class="dropdown-content">
+						<a href="HomePage.html">Home</a>
+						<a href="Profile.html">Profile</a>
+						<a href="FriendRequests.html">Friend Requests</a>
+						<a href="#">Search Friends</a>
+						<a href="#">Settings</a>
+						<a href="index.html">Logout</a>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="card-box">
+					<hr>
+					<form action="SearchFriend.html">
+						<input type="search" id="small-search" placeholder="Search.." title="Search your friends">
+						<input type="submit" name="search" value="Search">
 					</form>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<a href="Conversation.html" title="Yash Amethiya">
-						<img src="./Images/OtherProfile.png" height="40" width="40">
-						<b>A</b>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<a href="Conversation.html" title="Yash Amethiya">
-						<img src="./Images/OtherProfile.png" height="40" width="40">
-						<b>B</b>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<a href="Conversation.html" title="Yash Amethiya">
-						<img src="./Images/OtherProfile.png" height="40" width="40">
-						<b>C</b>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<a href="Conversation.html" title="Yash Amethiya">
-						<img src="./Images/OtherProfile.png" height="40" width="40">
-						<b>D</b>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<a href="Conversation.html" title="Yash Amethiya">
-						<img src="./Images/OtherProfile.png" height="40" width="40">
-						<b>E</b>
-					</a>
-				</td>
-			</tr>
-		</table></center>
+					<hr>
+				</div>
+				
+				<a href="Profile.html" class="design">
+					<div class="friend-card">
+							<img title="Profile" src="./Images/OtherProfile.png"/>
+							<span>Devanshi Sheth</span>
+					</div>
+				</a>
+				
+				<a href="Profile.html" class="design">
+				<div class="friend-card">
+						<img title="Profile" src="./Images/OtherProfile.png"/>
+						<span>Aastha Patel</span>
+				</div>
+				</a>
+				
+				<a href="Profile.html" class="design">
+				<div class="friend-card">
+						<img title="Profile" src="./Images/OtherProfile.png"/>
+						<span>Priyavardhan panchal</span>
+				</div>
+				</a>
+				
+				<a href="Profile.html" class="design">
+				<div class="friend-card">
+						<img title="Profile" src="./Images/OtherProfile.png"/>
+						<span>Nevil Christian</span>
+				</div>
+				</a>
+				
+				<a href="Profile.html" class="design">
+				<div class="friend-card">
+						<img title="Profile" src="./Images/OtherProfile.png"/>
+						<span>Shivani Patel</span>
+				</div>
+				
+				<a href="Profile.html" class="design">
+				<div class="friend-card">
+						<img title="Profile" src="./Images/OtherProfile.png"/>
+						<span>Rahil Bhesdadia</span>
+				</div>
+				</a>
+				
+				<a href="Profile.html" class="design">
+				<div class="friend-card">
+						<img title="Profile" src="./Images/OtherProfile.png"/>
+						<span>Utsav Shekh</span>
+				</div>
+				</a>
+				
+			</div>
+			<div class="custom-large pad">
+				<!--<div class="navbar">
+					<p>Home Page</p>
+				</div>-->
+				<div class="homemain">
+					Welcome!!<br>
+					Stay Connected,<br>
+					Stay Happy.
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

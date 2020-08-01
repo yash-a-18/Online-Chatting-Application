@@ -2,74 +2,85 @@
 <html lan='en'>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="OCA.css">
+		
 		<meta charset='UTF-8'/>
 		<title>
-			Talk Talk : Username
+			Talk Talk : Change Username
 		</title>
 	</head>
 	<body>
-		<center><table border=1>
-			<tr>
-				<td height="30" width="240">
-					<center><h2>
-						<a href="Profile.html">Profile</a>
-					</h2></center>
-				</td>
-				<td rowspan=7>
-					<h1>Edit Username</h1>
-					<h2><em>Be Creative!!</em></h2>
+		<div class="custom-box pad">
+			<div class="custom-small pad">
+				<div class="profile-card" style="margin-bottom:5px;">
+					<a href="HomePage.html" class="design">
+						<i class="arrow left" style="vertical-align:middle;"></i>
+					</a>
+					<span class="top" style="float:center;vertical-align:middle;">Profile</span>
+					
+				</div>
+				
+				<div class="card-box">
 					<hr>
-					<center>
-						<form action="Profile.html">
-							<table height="420" width="1000" border=1>
-								<tr>
-									<td>
-										<h3><b>New Username:<b></h3>
-									</td>
-									<td>
-										<input type="text" name="username" size="100"/>
-									</td>
-								</tr>
-								<tr>
-									<td colspan=2>
-										<center>
-										<input type="submit" value="Change"/>
-										</center>
-									</td>
-								</tr>
-							</table>
-						</form>
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<center>
-						<a href="ChangePhoto.html">
-							<img title="Change Profile" src="./Images/MyProfile.png" height="100" width="100">
+						<a class="decor" href="ChangePhoto.html">
+							<img class="profile" title="Change Profile" src="./Images/MyProfile.png" height="100" width="100">
 							<br>
 							<em>Change Profile Photo</em>
 						</a>
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240">
-					<u>Your Name:</u>
-					<br>
-					<b>Yash Amethiya</b>
-				</td>
-			</tr>
-			<tr>
-				<td height="30" width="240" >
-					<u>Your UserName:</u>
-					<br>
-					<b>anonymously_yash</b>
-					&emsp;
-					<a href="ChangeUsername.html" title="Change Username">Edit/Change</a>
-				</td>
-			</tr>
-			
-		</table></center>
+					
+				</div>
+				<hr>
+				
+				<div class="card-box" style="height:auto;">
+					Name:<br>
+					Yash Amethiya
+				</div>
+				<hr>
+				
+				<div class="card-box" style="height:auto;">
+					Username:<br>
+					anonymously_yash
+					<a class="decor" href="ChangeUsername.html" title="Change Username" style="margin-left:90px;">Edit</a>
+				</div>
+				<hr>
+				
+				<div class="card-box" style="height:auto;">
+					Date of Birth:<br>
+					06/06/2001
+					<hr>
+				</div>
+				
+				
+				<div class="card-box" style="height:auto;margin-bottom:0px;">
+					Email Address:<br>
+					xyz@gmail.com
+					<hr>
+				</div>
+				
+				
+				<div class="card-box" style="height:auto;margin-bottom:0px;">
+					Mobile Number:<br>
+					1234567890
+					<hr>
+				</div>
+				
+				
+				
+			</div>
+			<div class="custom-large pad">
+				<!--<div class="navbar">
+					<p>Home Page</p>
+				</div>-->
+				<div class="main">
+					<form action="Profile.html">
+						<label for="uname">New Username</label>
+						<input type="text" id="uname" name="username" placeholder="New username.." required>
+					
+					<input type="submit" value="Change">
+				</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
