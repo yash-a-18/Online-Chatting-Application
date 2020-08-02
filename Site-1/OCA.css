@@ -24,7 +24,7 @@ body,html
 		border-color:rgb(128, 128, 128,0.5);
 		border-radius:8px;*/
 		font-family:Verdana;
-		position:fixed;
+		position:static;
 		width:97.3%;
 		height:94%;
 	}
@@ -40,13 +40,13 @@ body,html
 		margin-bottom: 13px;
 		/*margin-right: 900px;
 		/*margin-left: 350px;*/
-		position:fixed;
+		position:static;
 		color:rgb(217, 217, 217);
 		/*font-size:1.5vw;*/
 		width:25%;
 		Text-align:center;
 		float:left;
-		height:88.5%;
+		height:93%;
 		overflow-y:auto;
 		
 	}
@@ -60,11 +60,11 @@ body,html
 		/*margin-top:13px;
 		margin-bottom: 13px;*/
 		margin-left: 360px;
-		position:fixed;
+		position:static;
 		color:rgb(217, 217, 217);
 		font-size:1.5vw;
 		width:67%;
-		height:88.5%;
+		height:93%;
 		Text-align:center;	
 		overflow-y:auto;
 	}
@@ -161,9 +161,9 @@ body,html
 		text-transform:capitalize;
 		color:black;
 		font-weight: bold;
-		padding-left:62px;
-		padding-right:115.5px;
-		font-size:3vw;
+		padding-left:78px;
+		padding-right:120px;
+		font-size:2.5vw;
 		display:inline-block;
 		margin-bottom:0px;
 		/*padding-right:85px;*/
