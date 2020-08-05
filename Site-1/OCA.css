@@ -753,101 +753,7 @@ body,html
 			font-size:3.5vw;
 		}
 	}
-	@media(min-width: 1300px)
-	{
-		div.custom-small
-		{
-			background-color:rgb(0,0,0,0.3);
-			border-style:groove;
-			border-width:2px;
-			border-color:rgb(128, 128, 128,0.5);
-			border-radius:8px;
-			/*margin-top:13px;
-			margin-bottom: 13px;
-			/*margin-right: 900px;
-			/*margin-left: 350px;*/
-			position:absolute;
-			color:rgb(217, 217, 217);
-			/*font-size:1.5vw;*/
-			width:22%;
-			text-align:center;
-			float:left;
-			height:95%;
-			/*overflow-y:auto;*/
-			margin-bottom: 15px;
-		}
-		div.custom-large
-		{
-			background-color:rgb(0,0,0,0.3);
-			border-style:groove;
-			border-width:2px;
-			border-color:rgb(128, 128, 128,0.5);
-			border-radius:8px;
-			/*margin-top:13px;
-			margin-bottom: 13px;*/
-			margin-left: 360px;
-			position:absolute;
-			color:rgb(217, 217, 217);
-			font-size:1.5vw;
-			width:71%;
-			height:95%;
-			text-align:center;	
-			overflow-y:auto;
-			margin-bottom: 15px;
-		}
-		.friend-list
-		{
-			/*background-color:rgb(0,0,0,0.2);
-			border-style:groove;
-			border-width:2px;
-			border-color:rgb(128, 128, 128,0.3);
-			border-radius:8px;*/
-			font-family: Verdana;
-			position: absolute;
-			width: auto;
-			overflow-y: auto;
-			margin-right: 2px;
-			margin-left: 2px;
-			margin-top: 73px;
-			height: 83%;
-			padding-right: 15px;
-		}
-		.friend-card
-		{
-			background-color:rgb(0,0,0,0.2);
-			border-style:groove;
-			border-width:2px;
-			border-color:rgb(128, 128, 128,0.3);
-			border-radius:8px;
-			position:static;
-			font-size:1.5vw;
-			width:auto;
-			display:inline;
-			text-align:left;
-			float:left;
-			height:9%;
-			margin-bottom:5px;
-			padding-top:10px;
-			padding-left:10px;
-		}
-		.homemain
-		{
-			/*background-color:rgb(0,0,0,0.2);
-			border-style:groove;
-			border-width:2px;
-			border-color:rgb(128, 128, 128,0.3);
-			border-radius:8px;*/
-			padding: 55px;
-			margin-top:253px;
-			margin-bottom:auto;
-			margin-left:auto;
-			margin-right:auto;
-			height: auto;
-			text-align:center;
-			font-size:3vw;
-		}
-	}
-	
+
 	@media(min-width: 1450px)
 	{
 		div.custom-small
@@ -973,3 +879,100 @@ body,html
 			font-size: 1.5vw;
 		}
 	}
+
+	@media(min-width: 1300px)
+	{
+		div.custom-small
+		{
+			background-color:rgb(0,0,0,0.3);
+			border-style:groove;
+			border-width:2px;
+			border-color:rgb(128, 128, 128,0.5);
+			border-radius:8px;
+			/*margin-top:13px;
+			margin-bottom: 13px;
+			/*margin-right: 900px;
+			/*margin-left: 350px;*/
+			position:absolute;
+			color:rgb(217, 217, 217);
+			/*font-size:1.5vw;*/
+			width:22%;
+			text-align:center;
+			float:left;
+			height:95%;
+			/*overflow-y:auto;*/
+			margin-bottom: 15px;
+		}
+		div.custom-large
+		{
+			background-color:rgb(0,0,0,0.3);
+			border-style:groove;
+			border-width:2px;
+			border-color:rgb(128, 128, 128,0.5);
+			border-radius:8px;
+			/*margin-top:13px;
+			margin-bottom: 13px;*/
+			margin-left: 360px;
+			position:absolute;
+			color:rgb(217, 217, 217);
+			font-size:1.5vw;
+			width:71%;
+			height:95%;
+			text-align:center;	
+			overflow-y:auto;
+			margin-bottom: 15px;
+		}
+		.friend-list
+		{
+			/*background-color:rgb(0,0,0,0.2);
+			border-style:groove;
+			border-width:2px;
+			border-color:rgb(128, 128, 128,0.3);
+			border-radius:8px;*/
+			font-family: Verdana;
+			position: absolute;
+			width: auto;
+			overflow-y: auto;
+			margin-right: 2px;
+			margin-left: 2px;
+			margin-top: 73px;
+			height: 83%;
+			padding-right: 15px;
+		}
+		.friend-card
+		{
+			background-color:rgb(0,0,0,0.2);
+			border-style:groove;
+			border-width:2px;
+			border-color:rgb(128, 128, 128,0.3);
+			border-radius:8px;
+			position:static;
+			font-size:1.5vw;
+			width:auto;
+			display:inline;
+			text-align:left;
+			float:left;
+			height:9%;
+			margin-bottom:5px;
+			padding-top:10px;
+			padding-left:10px;
+		}
+		.homemain
+		{
+			/*background-color:rgb(0,0,0,0.2);
+			border-style:groove;
+			border-width:2px;
+			border-color:rgb(128, 128, 128,0.3);
+			border-radius:8px;*/
+			padding: 55px;
+			margin-top:253px;
+			margin-bottom:auto;
+			margin-left:auto;
+			margin-right:auto;
+			height: auto;
+			text-align:center;
+			font-size:3vw;
+		}
+	}
+	
+	
