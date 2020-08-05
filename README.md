@@ -1,2 +1,3 @@
 # Online-Chatting-Application
-Site-1 Contains HTML prototype of the application.
+1) HTML complete
+2) CSS complete and responsive CSS in almost done.
