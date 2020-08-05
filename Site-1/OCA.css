@@ -577,7 +577,7 @@ body,html
 			width:21%;
 			text-align:center;
 			float:left;
-			height:94%;
+			height:92%;
 			/*overflow-y:auto;*/
 			margin-bottom: 15px;
 		}
@@ -595,7 +595,7 @@ body,html
 			color:rgb(217, 217, 217);
 			font-size:1.5vw;
 			width:73%;
-			height:94%;
+			height:92%;
 			text-align:center;	
 			overflow-y:auto;
 			margin-bottom: 15px;
@@ -614,7 +614,7 @@ body,html
 			margin-right: 2px;
 			margin-left: 2px;
 			margin-top: 73px;
-			height: 80%;
+			height: 78%;
 			padding-right: 15px;
 		}
 		.friend-card
