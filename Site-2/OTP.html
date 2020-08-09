@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="Login.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<meta charset='UTF-8'/>
+		<title>
+			Talk Talk : OTP
+		</title>
+	</head>
+	<body>
+		<script src="myJS.js">		</script>
+
+		<div class="custom-box pad">
+			<h2>OTP Needed!!</h2>
+			<div class="custom pad" style="font-size:2vw">
+				
+				<form onsubmit="return otp_validate();" action="SetUsername.html" id="form">
+					<div class="form-control" id="form-control-otp">
+						<label for="otp">OTP</label><sub>(<emp>Sent to your mobile number</emp>)</sub>
+						<input type="text" id="otp" name="otp" placeholder="6-Digit number">
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid OTP Number</small>
+					</div>
+
+					<input type="submit" value="Done">
+				</form>
+				
+				<p>
+					<center>
+						<a class="noline" href="OTP.html" onclick="send_otp_again()">Send Again</a>
+					</center>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
