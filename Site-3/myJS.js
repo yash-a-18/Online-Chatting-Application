@@ -89,6 +89,13 @@ function  otp_validate()
 		setErrorFor(otp, 'OTP must be of 6 digits');
 		return false;
 	}
+	else if(otp.value.trim().length > 6 )
+	{
+		//alert("Blank Password not allowed");
+		document.getElementById("form-control-otp").className = 'form-control error';
+		setErrorFor(otp, 'OTP must be of 6 digits');
+		return false;
+	}
 	else
 	{
 		document.getElementById("form-control-otp").className = 'form-control success';
