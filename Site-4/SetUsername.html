@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="Login.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<meta charset='UTF-8'/>
+		<title>
+			Talk Talk : Username
+		</title>
+	</head>
+	<body>
+		<script src="myJS.js">		</script>
+
+		<div class="custom-box pad">
+			<h2>Registration</h2>
+			<div class="custom pad">
+				
+					<!--<div class="btn-group">-->
+						<a class="noline" href="register.html"><!--button-->Back<!--/button--></a>
+						<!--<a href="admin.html"><button>Admin</button></a>-->
+					<!--/div-->
+					<hr>
+				<form onsubmit="return set_username_validate();" action="HomePage.html" id="form">
+
+					<div class="form-control" id="form-control-username">
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username" placeholder="Your username..">
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Username</small>
+					</div>
+
+					<div class="form-control" id="form-control-password">
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" placeholder="Your password..">
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Password</small>
+					</div>
+
+					<div class="form-control" id="form-control-confirm_password">	
+						<label for="confirm_password">Confirm Password</label>
+						<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password..">
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Re-Paasword</small>
+					</div>
+						
+					<input type="submit" value="Register">
+				</form>
+				
+				<!--<p>
+					<center>
+						<a class="noline" href="ResetPassword.html"><i>Forgot Password?</i></a>
+					</center>
+				</p>-->
+			</div>
+			<!--<div class="custom-para">
+				
+				<p>
+					<a class="noline dark" href='register.html'>Create New Account</a>
+				</p>
+			</div>-->
+		</div>
+	</body>
+</html>

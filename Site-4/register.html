@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lan='en'>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="Login.css">
+		
+		<meta charset='UTF-8'/>
+		<title>
+			Talk Talk : Register
+		</title>
+	</head>
+	<body>
+		<script src="myJS.js">		</script>
+		<div class="custom-box pad">
+			<h2>Registration</h2>
+			<div class="custom pad">
+				
+				<form onsubmit="return register_validate();" action="OTP.html" id="form">
+
+					<div class="form-control" id="form-control-firstname">
+						<label for="firstname">First Name</label>
+						<input type="text" id="firstname" name="firstname" placeholder="First Name.." >
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Firstname</small>
+					</div>
+						
+					<div class="form-control" id="form-control-lastname">	
+						<label for="lastname">Last Name</label>
+						<input type="text" id="lastname" name="lastname" placeholder="Last Name.." >
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Lastname</small>
+					</div>
+
+					<div class="form-control" id="form-control-dob">	
+						<label for="dob">Date of Birth</label>
+						<input type="date" id="dob" name="dob" >
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Date of birth</small>
+					</div>
+
+					<div class="form-control" id="form-control-email">	
+						<label for="email">Email Address</label>
+						<input type="email" id="email" name="email" placeholder="xyz@gamil.com" >
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Email Address</small>
+					</div>
+
+					<div class="form-control" id="form-control-mobileno">	
+						<label for="mobileno">Mobile Number</label>
+						<input type="text" id="mobileno" name="mobileno" placeholder="0123456789" >
+						<i class="fa fa-check-circle success"></i>
+						<i class="fa fa-exclamation-circle error"></i>
+						<small class="error">Invalid Mobile Number</small>
+					</div>
+						
+						<input type="submit" value="Submit">
+						
+				</form>
+				
+				<p>
+					<center>
+						<a class="noline" href="index.html"><i>Already have an account?</i></a>
+					</center>
+				</p>
+			</div>
+		</div>
+	</body>
