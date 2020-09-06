@@ -66,7 +66,12 @@ body,html
 	.friend-list
 	{
 		overflow-y: auto;
-		height: 80%;
+		height: 73%;
+	}
+	.chat-list
+	{
+		overflow-y: auto;
+		height: 74.5%;
 	}
 	.card
 	{
@@ -98,25 +103,124 @@ body,html
 	{
 		background:rgb(0,0,0,0.3); 
 	}
-	@media(min-width:1280px)
+	div.chat-list::-webkit-scrollbar
+	{
+		width: 8px;
+	}
+
+	div.chat-list::-webkit-scrollbar-track
+	{
+		box-shadow: inset 0 0 5px grey; 
+		border-radius: 8px;
+	}
+	 
+	div.chat-list::-webkit-scrollbar-thumb
+	{
+		background: #cccccc; 
+		border-radius: 8px;
+	}
+
+	div.chat-list::-webkit-scrollbar-thumb:hover
+	{
+		background:rgb(0,0,0,0.3); 
+	}
+	a:link.dark
+	{
+		color: rgb(217, 217, 217);;
+	}
+	a:visited.dark
+	{
+		color: rgb(217, 217, 217);;
+	}
+	a.noline
+	{
+		text-decoration:none;
+	}
+	.time-right
+	{
+  		float: right;
+  		color: #aaa;
+	}
+	.time-left
+	{
+  		float: left;
+  		color: #999;
+	}
+	.chat-left
+	{
+		text-align: left;
+		background-color:rgb(0,0,0,0.3);
+		border-style:groove;
+		border-width:2px;
+		border-color:rgb(128, 128, 128,0.5);
+		border-radius:8px;
+	}
+	.chat-right
+	{
+		text-align: right;
+		background-color:rgb(0,0,0,0.3);
+		border-style:groove;
+		border-width:2px;
+		border-color:rgb(128, 128, 128,0.5);
+		border-radius:8px;
+	}
+	@media (max-width: 1200px)
 	{
 		.left-box
 		{
-			height: 750px;
+			height: 1180px;
 		}
 		.right-box
 		{
-			height: 750px;
+			height: 1180px;
+		}
+		.friend-list
+		{
+			height: 1030px;
+		}
+		.chat-list
+		{
+			height: 1035px;
 		}
 	}
-	@media(min-width:1300px)
+	@media(min-width: 1450px)
 	{
 		.left-box
 		{
-			height: 850px;
+			height: 1180px;
 		}
 		.right-box
 		{
-			height: 850px;
+			height: 1180px;
+		}
+		.friend-list
+		{
+			height: 1030px;
+		}
+		.chat-list
+		{
+			height: 1035px;
 		}
 	}
+
+	@media(min-width: 1300px)
+	{
+		.left-box
+		{
+			height: 950px;
+		}
+		.right-box
+		{
+			height: 950px;
+		}
+		.friend-list
+		{
+			height: 800px;
+		}
+		.chat-list
+		{
+			height: 805px;
+		}
+	}
+	
+	
