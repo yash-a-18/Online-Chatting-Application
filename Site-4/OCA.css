@@ -209,3 +209,33 @@ a.noline {
         height: 805px;
     }
 }
+
+@media(min-width: 1500px) {
+    .left-box {
+        height: 800px;
+    }
+    .right-box {
+        height: 800px;
+    }
+    .friend-list {
+        height: 700px;
+    }
+    .chat-list {
+        height: 655px;
+    }
+}
+
+@media(min-height: 800px) {
+    .left-box {
+        height: 800px;
+    }
+    .right-box {
+        height: 800px;
+    }
+    .friend-list {
+        height: 700px;
+    }
+    .chat-list {
+        height: 655px;
+    }
+}
