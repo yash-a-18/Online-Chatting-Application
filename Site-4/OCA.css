@@ -180,7 +180,7 @@ a.noline {
     }
 }
 
-@media(min-width: 1450px) {
+@media(min-width: 1300px) {
     .left-box {
         height: 950px;
     }
@@ -195,7 +195,7 @@ a.noline {
     }
 }
 
-@media(min-width: 1300px) {
+@media(min-width: 1450px) {
     .left-box {
         height: 950px;
     }
