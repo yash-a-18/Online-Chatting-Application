@@ -28,52 +28,70 @@
 					    <div class="col-md-2 my-2 mx-2">
 					      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
 					    </div>
+
 					    <div class="col-md-9 text-right my-4">
-					      <i class="fas fa-ellipsis-h fa-lg mx-2"></i>
+							<div class="dropdown">
+								<a  type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-ellipsis-h fa-lg mx-2"></i>
+								</a>
+								<div class="dropdown-menu dropdown-primary">
+									<a class="dropdown-item" href="HomePage.html"><i class="fas fa-home"></i>&nbsp Home</a>
+									<a class="dropdown-item" href="#"><i class="fas fa-user" id="profile"></i>&nbsp Profile</a>
+									<a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i>&nbsp Friend requests</a>
+									<a class="dropdown-item" href="#"><i class="fas fa-users"></i>&nbsp Search Friends</a>
+									<a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i>&nbsp Settings</a>
+									<a class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
+								</div>
+							</div>
 					    </div>
+
 					  </div>
 					</div>
 
 					<div class="card">
 					  <div class="row no-gutters">
 					    <form class="form-inline my-3 mx-3">
-					      <input class="form-control mr-sm-2" style="position: relative;width: 100%;" type="search" placeholder="Search" aria-label="Search">
+					      <input class="form-control mr-sm-2" style="position: relative;width: 100%;" type="search" placeholder="Search" id="searchTxt" aria-label="Search">
 					    </form>
 					  </div>
 					</div>
 
 					<div class="friend-list">
 
-						<a class="dark noline" href="chat.html"><div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h6 class="card-title">Shree</h6>
-						      </div>
-						    </div>
-						  </div>
-						</div></a>
+						<a class="dark noline" href="chat.html">
+							<div class="card search" style="max-width: 540px;" id="card-hover">
+								<div class="row no-gutters">
+									<div class="col-md-2 my-2 mx-2">
+									<img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+									</div>
+									<div class="col-md-9">
+									<div class="card-body">
+										<h6 class="card-title">Shree</h6>
+									</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="dark noline" href="chat.html">
+							<div class="card" style="max-width: 540px;" id="card-hover">
+							<div class="row no-gutters">
+								<div class="col-md-2 my-2 mx-2">
+								<img src="./Images/profile_2.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+								</div>
+								<div class="col-md-9">
+								<div class="card-body">
+									<h6 class="card-title">Shreeman</h6>
+								</div>
+								</div>
+							</div>
+							</div>
+						</a>
 
 						<div class="card" style="max-width: 540px;" id="card-hover">
 						  <div class="row no-gutters">
 						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h6 class="card-title">Shreeman</h6>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						      <img src="./Images/profile_1.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
 						    </div>
 						    <div class="col-md-9">
 						      <div class="card-body">
@@ -90,7 +108,7 @@
 						    </div>
 						    <div class="col-md-9">
 						      <div class="card-body">
-						        <h4 class="card-title"></h4>
+						        <h6 class="card-title">Yash</h6>
 						      </div>
 						    </div>
 						  </div>
@@ -103,7 +121,7 @@
 						    </div>
 						    <div class="col-md-9">
 						      <div class="card-body">
-						        <h4 class="card-title"></h4>
+						        <h6 class="card-title">Utsav</h6>
 						      </div>
 						    </div>
 						  </div>
@@ -116,7 +134,7 @@
 						    </div>
 						    <div class="col-md-9">
 						      <div class="card-body">
-						        <h4 class="card-title"></h4>
+						        <h6 class="card-title">Devanshi</h6>
 						      </div>
 						    </div>
 						  </div>
@@ -129,7 +147,7 @@
 						    </div>
 						    <div class="col-md-9">
 						      <div class="card-body">
-						        <h4 class="card-title"></h4>
+						        <h6 class="card-title">Aastha</h6>
 						      </div>
 						    </div>
 						  </div>
@@ -142,7 +160,7 @@
 						    </div>
 						    <div class="col-md-9">
 						      <div class="card-body">
-						        <h4 class="card-title"></h4>
+						        <h6 class="card-title">Shivani</h6>
 						      </div>
 						    </div>
 						  </div>
@@ -155,98 +173,7 @@
 						    </div>
 						    <div class="col-md-9">
 						      <div class="card-body">
-						        <h4 class="card-title"></h4>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h4 class="card-title"></h4>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h4 class="card-title"></h4>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h4 class="card-title"></h4>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h4 class="card-title"></h4>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h4 class="card-title"></h4>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h4 class="card-title"></h4>
-						      </div>
-						    </div>
-						  </div>
-						</div>
-
-						<div class="card" style="max-width: 540px;" id="card-hover">
-						  <div class="row no-gutters">
-						    <div class="col-md-2 my-2 mx-2">
-						      <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-						    </div>
-						    <div class="col-md-9">
-						      <div class="card-body">
-						        <h4 class="card-title"></h4>
+						        <h6 class="card-title">Dhruval</h6>
 						      </div>
 						    </div>
 						  </div>
@@ -259,7 +186,7 @@
 			<div class="col-sm-9">
 				<div class="right-box">
 
-					<div class="container" style="text-align: center;margin-top: 200px;font-weight: bold;">
+				<div class="container" style="text-align: center;margin-top: 200px;font-weight: bold;">
 					Welcome!!<br>
 					Stay Connected,<br>
 					Stay Happy.
@@ -280,6 +207,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>

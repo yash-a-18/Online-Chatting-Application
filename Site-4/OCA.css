@@ -1,226 +1,211 @@
 /*--------------------------------------------------------HTML and BODY---------------------------------------------------------------------------*/
-body,html
-	{
-		/* height: 100%; */
-		margin: 0;
-		background: #ffffff;
-		background: -webkit-linear-gradient(to right, #b3b3b3, #d9d9d9, #ffffff);
-		background: linear-gradient(to right, #b3b3b3, #d9d9d9, #ffffff);
-		font-family: Verdana;
-		overflow-x:hidden;
-		color: rgb(217, 217, 217);
-	}
-	.light-mode
-	{
-		height: 100%;
-		margin: 0;
-		background: #7F7FD5;
-		background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-		background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-		font-family: Verdana;
-		color: rgb(217, 217, 217);
-	}
-	.dark-mode
-	{
-		height: 100%;
-		margin: 0;
-		background: #999999;
-		background: -webkit-linear-gradient(to right, #999999,#595959, #404040);
-		background: linear-gradient(to right, #999999,#595959,#404040);
-		font-family: Verdana;
-		color:rgb(217, 217, 217);
-	}
-	.sunlight-mode
-	{
-		height: 100%;
-		margin: 0;
-		background: #ff9900;
-		background: -webkit-linear-gradient(to right, #ffcc80, #ffad33, #ff9900);
-		background: linear-gradient(to right, #ffcc80, #ffad33, #ff9900);
-		font-family: Verdana;
-		color:rgb(217, 217, 217);
-	}
-	.left-box
-	{
-		background-color:rgb(0,0,0,0.3);
-		border-style:groove;
-		border-width:2px;
-		border-color:rgb(128, 128, 128,0.5);
-		border-radius:8px;
-		margin-top: 10px;
-		height:550px;
-		margin-bottom: 10px;
-		
-	}
-	.right-box
-	{
-		background-color:rgb(0,0,0,0.3);
-		border-style:groove;
-		border-width:2px;
-		border-color:rgb(128, 128, 128,0.5);
-		border-radius:8px;
-		margin-top: 10px;
-		height: 550px;
-		margin-bottom: 10px;
-	}
-	.friend-list
-	{
-		overflow-y: auto;
-		height: 73%;
-	}
-	.chat-list
-	{
-		overflow-y: auto;
-		height: 74.5%;
-	}
-	.card
-	{
-		background-color:rgb(0,0,0,0.1);
-		height: 70px;
-	}
-	#card-hover:hover
-	{
-		background-color:rgb(0,0,0,0.4);
-	}
-	div.friend-list::-webkit-scrollbar
-	{
-		width: 8px;
-	}
 
-	div.friend-list::-webkit-scrollbar-track
-	{
-		box-shadow: inset 0 0 5px grey; 
-		border-radius: 8px;
-	}
-	 
-	div.friend-list::-webkit-scrollbar-thumb
-	{
-		background: #cccccc; 
-		border-radius: 8px;
-	}
+body,
+html {
+    /* height: 100%; */
+    margin: 0;
+    background: #ffffff;
+    background: -webkit-linear-gradient(to right, #b3b3b3, #d9d9d9, #ffffff);
+    background: linear-gradient(to right, #b3b3b3, #d9d9d9, #ffffff);
+    font-family: Verdana;
+    overflow-x: hidden;
+    color: rgb(217, 217, 217);
+}
 
-	div.friend-list::-webkit-scrollbar-thumb:hover
-	{
-		background:rgb(0,0,0,0.3); 
-	}
-	div.chat-list::-webkit-scrollbar
-	{
-		width: 8px;
-	}
+.light-mode {
+    height: 100%;
+    margin: 0;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    font-family: Verdana;
+    color: rgb(217, 217, 217);
+}
 
-	div.chat-list::-webkit-scrollbar-track
-	{
-		box-shadow: inset 0 0 5px grey; 
-		border-radius: 8px;
-	}
-	 
-	div.chat-list::-webkit-scrollbar-thumb
-	{
-		background: #cccccc; 
-		border-radius: 8px;
-	}
+.dark-mode {
+    height: 100%;
+    margin: 0;
+    background: #999999;
+    background: -webkit-linear-gradient(to right, #999999, #595959, #404040);
+    background: linear-gradient(to right, #999999, #595959, #404040);
+    font-family: Verdana;
+    color: rgb(217, 217, 217);
+}
 
-	div.chat-list::-webkit-scrollbar-thumb:hover
-	{
-		background:rgb(0,0,0,0.3); 
-	}
-	a:link.dark
-	{
-		color: rgb(217, 217, 217);;
-	}
-	a:visited.dark
-	{
-		color: rgb(217, 217, 217);;
-	}
-	a.noline
-	{
-		text-decoration:none;
-	}
-	.time-right
-	{
-  		float: right;
-  		color: #aaa;
-	}
-	.time-left
-	{
-  		float: left;
-  		color: #999;
-	}
-	.chat-left
-	{
-		text-align: left;
-		background-color:rgb(0,0,0,0.3);
-		border-style:groove;
-		border-width:2px;
-		border-color:rgb(128, 128, 128,0.5);
-		border-radius:8px;
-	}
-	.chat-right
-	{
-		text-align: right;
-		background-color:rgb(0,0,0,0.3);
-		border-style:groove;
-		border-width:2px;
-		border-color:rgb(128, 128, 128,0.5);
-		border-radius:8px;
-	}
-	@media (max-width: 1200px)
-	{
-		.left-box
-		{
-			height: 1180px;
-		}
-		.right-box
-		{
-			height: 1180px;
-		}
-		.friend-list
-		{
-			height: 1030px;
-		}
-		.chat-list
-		{
-			height: 1035px;
-		}
-	}
-	@media(min-width: 1450px)
-	{
-		.left-box
-		{
-			height: 1180px;
-		}
-		.right-box
-		{
-			height: 1180px;
-		}
-		.friend-list
-		{
-			height: 1030px;
-		}
-		.chat-list
-		{
-			height: 1035px;
-		}
-	}
+.sunlight-mode {
+    height: 100%;
+    margin: 0;
+    background: #ff9900;
+    background: -webkit-linear-gradient(to right, #ffcc80, #ffad33, #ff9900);
+    background: linear-gradient(to right, #ffcc80, #ffad33, #ff9900);
+    font-family: Verdana;
+    color: rgb(217, 217, 217);
+}
 
-	@media(min-width: 1300px)
-	{
-		.left-box
-		{
-			height: 950px;
-		}
-		.right-box
-		{
-			height: 950px;
-		}
-		.friend-list
-		{
-			height: 800px;
-		}
-		.chat-list
-		{
-			height: 805px;
-		}
-	}
-	
-	
+.left-box {
+    background-color: rgb(0, 0, 0, 0.3);
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(128, 128, 128, 0.5);
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 550px;
+    margin-bottom: 10px;
+}
+
+.right-box {
+    background-color: rgb(0, 0, 0, 0.3);
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(128, 128, 128, 0.5);
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 550px;
+    margin-bottom: 10px;
+}
+
+.friend-list {
+    overflow-y: auto;
+    height: 73%;
+}
+
+.chat-list {
+    overflow-y: auto;
+    height: 74.5%;
+}
+
+.card {
+    background-color: rgb(0, 0, 0, 0.1);
+    height: 70px;
+}
+
+#card-hover:hover {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+div.friend-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+div.friend-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+div.friend-list::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 8px;
+}
+
+div.friend-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0, 0.3);
+}
+
+div.chat-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+div.chat-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+div.chat-list::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 8px;
+}
+
+div.chat-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0, 0.3);
+}
+
+a:link.dark {
+    color: rgb(217, 217, 217);
+    ;
+}
+
+a:visited.dark {
+    color: rgb(217, 217, 217);
+    ;
+}
+
+a.noline {
+    text-decoration: none;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.chat-left {
+    text-align: left;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(128, 128, 128, 0.5);
+    border-radius: 8px;
+}
+
+.chat-right {
+    text-align: right;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-style: groove;
+    border-width: 2px;
+    border-color: rgb(128, 128, 128, 0.5);
+    border-radius: 8px;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+    .left-box {
+        height: 1180px;
+    }
+    .right-box {
+        height: 1180px;
+    }
+    .friend-list {
+        height: 1030px;
+    }
+    .chat-list {
+        height: 1035px;
+    }
+}
+
+@media(min-width: 1450px) {
+    .left-box {
+        height: 1180px;
+    }
+    .right-box {
+        height: 1180px;
+    }
+    .friend-list {
+        height: 1030px;
+    }
+    .chat-list {
+        height: 1035px;
+    }
+}
+
+@media(min-width: 1300px) {
+    .left-box {
+        height: 950px;
+    }
+    .right-box {
+        height: 950px;
+    }
+    .friend-list {
+        height: 800px;
+    }
+    .chat-list {
+        height: 805px;
+    }
+}
