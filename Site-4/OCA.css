@@ -182,31 +182,31 @@ a.noline {
 
 @media(min-width: 1300px) {
     .left-box {
-        height: 950px;
-    }
-    .right-box {
-        height: 950px;
-    }
-    .friend-list {
         height: 800px;
     }
+    .right-box {
+        height: 800px;
+    }
+    .friend-list {
+        height: 650px;
+    }
     .chat-list {
-        height: 805px;
+        height: 655px;
     }
 }
 
 @media(min-width: 1450px) {
     .left-box {
-        height: 950px;
-    }
-    .right-box {
-        height: 950px;
-    }
-    .friend-list {
         height: 800px;
     }
+    .right-box {
+        height: 800px;
+    }
+    .friend-list {
+        height: 650px;
+    }
     .chat-list {
-        height: 805px;
+        height: 655px;
     }
 }
 
