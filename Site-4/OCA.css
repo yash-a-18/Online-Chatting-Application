@@ -218,14 +218,15 @@ a.noline {
         height: 800px;
     }
     .friend-list {
-        height: 700px;
+        height: 650px;
     }
     .chat-list {
         height: 655px;
     }
 }
 
-@media(min-height: 800px) {
+
+/* @media(min-height: 800px) {
     .left-box {
         height: 800px;
     }
@@ -238,4 +239,4 @@ a.noline {
     .chat-list {
         height: 655px;
     }
-}
+} */
