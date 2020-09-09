@@ -167,31 +167,31 @@ a.noline {
 
 @media (max-width: 1200px) {
     .left-box {
-        height: 1180px;
+        height: 950px;
     }
     .right-box {
-        height: 1180px;
+        height: 950px;
     }
     .friend-list {
-        height: 1030px;
+        height: 800px;
     }
     .chat-list {
-        height: 1035px;
+        height: 805px;
     }
 }
 
 @media(min-width: 1450px) {
     .left-box {
-        height: 1180px;
+        height: 950px;
     }
     .right-box {
-        height: 1180px;
+        height: 950px;
     }
     .friend-list {
-        height: 1030px;
+        height: 800px;
     }
     .chat-list {
-        height: 1035px;
+        height: 805px;
     }
 }
 
