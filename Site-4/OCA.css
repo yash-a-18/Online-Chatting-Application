@@ -225,18 +225,17 @@ a.noline {
     }
 }
 
-
-/* @media(min-height: 800px) {
+@media(min-width: 1500px) and (max-height: 640px) {
     .left-box {
-        height: 800px;
+        height: 600px;
     }
     .right-box {
-        height: 800px;
+        height: 600px;
     }
     .friend-list {
-        height: 700px;
+        height: 450px;
     }
     .chat-list {
-        height: 655px;
+        height: 457px;
     }
-} */
+}
