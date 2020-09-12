@@ -79,6 +79,29 @@ html {
     height: 70px;
 }
 
+#card-settings-name.card {
+    height: 400px;
+    overflow-y: auto;
+}
+
+#card-settings-name.card::-webkit-scrollbar {
+    width: 8px;
+}
+
+#card-settings-name.card::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+#card-settings-name.card::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 8px;
+}
+
+#card-settings-name.card::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0, 0.3);
+}
+
 #card-profile-name.card {
     height: 250px;
     overflow-y: auto;

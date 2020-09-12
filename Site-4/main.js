@@ -103,50 +103,66 @@ function settings() {
     </div>
 </div>
 
-<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.1);">
-      <div class="row no-gutters">
-        <div class="col-md-2 my-2 mx-2">
-            <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-        </div>
-        <div class="col-md-9">
-          <div class="card-body">
-            <h6 class="card-title">anonymously_yash</h6>
-          </div>
+<a class="dark noline" onclick="profile()">
+    <div class="card" style="max-width: 540px;" id="card-hover">
+        <div class="row no-gutters">
+            <div class="col-md-2 my-2 mx-2">
+                <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+            </div>
+            <div class="col-md-9">
+            <div class="card-body">
+                <h6 class="card-title">anonymously_yash</h6>
+            </div>
+            </div>
         </div>
     </div>
-</div>
+</a>
+        <div class="friend-list">
+            <a class="dark noline" onclick="theme()">
+                <div class="card search" style="max-width: 540px;" id="card-hover">
+                    <div class="row no-gutters">
+                        <div class="col-md-2 my-auto mx-auto">
+                            <i class="fas fa-adjust fa-lg"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title my-auto">Theme</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
 
-<div id="card-profile-name" class="card" style="max-width: 540px;">
-    <div class="row no-gutters mx-auto">
-        <div class="col-md">
-            <div class="card-body">
-                <h6 class="card-title">Name:</h6>
-                <p class="card-text">Yash Amethiya</p>
-            </div>
-            <hr>
-            <div class="card-body">
-                <h6 class="card-title">Username:</h6>
-                <p class="card-text">anonymously_yash</p>
-                <p class="card-text"><a class="noline" href="ChangeUsername.html" style="color:violet;" onMouseOut="this.style.color='violet'" onMouseOver="this.style.color='red'">Edit</a></p>
-            </div>
-            <hr>
-            <div class="card-body">
-                <h6 class="card-title">Date of Birth:</h6>
-                <p class="card-text">06/06/2001</p>
-            </div>
-            <hr>
-            <div class="card-body">
-                <h6 class="card-title">Email address:</h6>
-                <p class="card-text">kuchbhi@gmail.com</p>
-            </div>
-            <hr>
-            <div class="card-body">
-                <h6 class="card-title">Mobile Number:</h6>
-                <p class="card-text">1234567890</p>
-            </div>
-        </div>
-    </div>
-</div>`
+            <a class="dark noline" onclick="blocked()">
+                <div class="card search" style="max-width: 540px;" id="card-hover">
+                    <div class="row no-gutters">
+                        <div class="col-md-2 my-auto mx-auto">
+                            <i class="fas fa-ban fa-lg"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title my-auto">Blocked</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a class="dark noline" onclick="help()">
+                <div class="card search" style="max-width: 540px;" id="card-hover">
+                    <div class="row no-gutters">
+                        <div class="col-md-2 my-auto mx-auto">
+                            <i class="fas fa-question-circle fa-lg"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title my-auto">Help</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>`
 }
 
 function homepage() {
@@ -175,7 +191,7 @@ function homepage() {
                   <button class="dropdown-item" ><i class="fas fa-user-plus"></i>&nbsp Friend requests</button>
                   <button class="dropdown-item" href="#"><i class="fas fa-users"></i>&nbsp Search Friends</button>
                   <button class="dropdown-item" onclick="settings()"><i class="fas fa-user-cog"></i>&nbsp Settings</button>
-                  <button class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</button>
+                  <a class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
               </div>
           </div>
       </div>
@@ -192,7 +208,7 @@ function homepage() {
 
 <div class="friend-list">
 
-  <a class="dark noline" href="chat.html">
+  <a class="dark noline" onclick="chat()">
       <div class="card search" style="max-width: 540px;" id="card-hover">
           <div class="row no-gutters">
               <div class="col-md-2 my-2 mx-2">
@@ -207,7 +223,7 @@ function homepage() {
       </div>
   </a>
 
-  <a class="dark noline" href="chat.html">
+  <a class="dark noline" onclick="chat()">
       <div class="card" style="max-width: 540px;" id="card-hover">
       <div class="row no-gutters">
           <div class="col-md-2 my-2 mx-2">
@@ -412,4 +428,44 @@ function chat() {
       </div>
     </div>
   </div>`
+}
+
+function theme() {
+    var e = document.getElementById("right");
+    let children = e.children;
+    console.log(children);
+    for (i = 0; i < children.length; i++) {
+        children[i].style.display = "none";
+    }
+    e.innerHTML = `<div class="container" style="margin-top: 180px;font-weight:bold;">
+    <div class="alert alert-dark alert-dismissible fade show" role="alert" style="background-color: rgb(0, 0, 0, 0.2);">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="default" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+                Default
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="light" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                Light
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="dark" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                Dark
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="sunlight" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                Sunlight
+            </label>
+        </div>
+        <button type="button" class="btn btn-success my-2">Change Theme</button>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+</div>`
 }
