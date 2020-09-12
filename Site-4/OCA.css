@@ -49,7 +49,7 @@ html {
     border-color: rgb(128, 128, 128, 0.5);
     border-radius: 8px;
     margin-top: 10px;
-    height: 550px;
+    height: 580px;
     margin-bottom: 10px;
 }
 
@@ -60,18 +60,18 @@ html {
     border-color: rgb(128, 128, 128, 0.5);
     border-radius: 8px;
     margin-top: 10px;
-    height: 550px;
+    height: 580px;
     margin-bottom: 10px;
 }
 
 .friend-list {
     overflow-y: auto;
-    height: 73%;
+    height: 75%;
 }
 
 .chat-list {
     overflow-y: auto;
-    height: 74.5%;
+    height: 75.7%;
 }
 
 .card {
@@ -103,7 +103,7 @@ html {
 }
 
 #card-profile-name.card {
-    height: 250px;
+    height: 280px;
     overflow-y: auto;
 }
 

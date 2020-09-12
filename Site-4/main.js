@@ -27,7 +27,7 @@ function profile() {
     e.innerHTML = `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
     <div class="row no-gutters">
         <div class="col-md-2 my-3 mx-3">
-            <a class="dark noline" onclick="homepage()">
+            <a class="dark noline" onclick="homepage()" style="cursor:pointer;">
                 <i class="fas fa-angle-double-left fa-2x"></i>
            </a>
         </div>
@@ -89,7 +89,7 @@ function settings() {
     e.innerHTML = `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
     <div class="row no-gutters">
         <div class="col-md-2 my-3 mx-3">
-            <a class="dark noline" onclick="homepage()">
+            <a class="dark noline" onclick="homepage()" style="cursor:pointer;">
                 <!--i class="fas fa-chevron-left fa-2x"></i-->
                 <!--i class="fas fa-arrow-left fa-2x"></i-->
                 <!--i class="fas fa-arrow-circle-left fa-2x"></i-->
@@ -431,41 +431,88 @@ function chat() {
 }
 
 function theme() {
-    var e = document.getElementById("right");
+    var e = document.getElementById("left");
     let children = e.children;
     console.log(children);
     for (i = 0; i < children.length; i++) {
         children[i].style.display = "none";
     }
-    e.innerHTML = `<div class="container" style="margin-top: 180px;font-weight:bold;">
+    e.innerHTML =
+        `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
+        <div class="row no-gutters">
+            <div class="col-md-2 my-4 mx-3">
+                <a class="dark noline" onclick="settings()" style="cursor:pointer;">
+                    <!--i class="fas fa-chevron-left fa-2x"></i-->
+                    <i class="fas fa-arrow-left fa-lg"></i>
+                    <!--i class="fas fa-arrow-circle-left fa-2x"></i-->
+                    <!--i class="fas fa-angle-double-left fa-2x"></i-->
+                    <!--i class="fas fa-chevron-circle-left fa-2x"></i-->
+                </a>
+            </div>
+            <div class="col-md-8 my-4 mr-2">
+                <h5 style="cursor:pointer;" onclick="theme()">Change Theme</h5>
+            </div>
+        </div>
+    </div>
+        <div class="container" style="margin-top: 100px;font-weight:bold;">
     <div class="alert alert-dark alert-dismissible fade show" role="alert" style="background-color: rgb(0, 0, 0, 0.2);">
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="default" value="option1">
-            <label class="form-check-label" for="exampleRadios1">
-                Default
-            </label>
+        <div class="theme-options">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="default-mode" name="theme" value="Default" onclick="clck(this)">
+                <label class="form-check-label">
+                    Default
+                </label><br>
+                <input class="form-check-input" type="radio" id="light-mode" name="theme" value="Light" onclick="clck(this)">
+                <label class="form-check-label">
+                    Light
+                </label><br>
+                <input class="form-check-input" type="radio" id="dark-mode" name="theme" value="Dark" onclick="clck(this)">
+                <label class="form-check-label">
+                    Dark
+                </label><br>
+                <input class="form-check-input" type="radio" id="sunlight-mode" name="theme" value="Sunlight" onclick="clck(this)">
+                <label class="form-check-label">
+                    Sunlight
+                </label>
+            </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="light" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-                Light
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="dark" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-                Dark
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="sunlight" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-                Sunlight
-            </label>
-        </div>
-        <button type="button" class="btn btn-success my-2">Change Theme</button>
+        <!--button type="button" class="btn btn-success my-2" onclick="change_theme()">Change Theme</button-->
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
+    </div>
 </div>`
+}
+
+$(document).ready(function() {
+    // console.log("check");
+    switchColorTheme();
+});
+
+$(window).on('load', function() {
+    // console.log("check");
+    checkTheme();
+})
+
+function clck(item) {
+    console.log("object");
+    console.log(item.id);
+    switchColorTheme(item.id);
+}
+
+function checkTheme() {
+    const currentThemeColor = localStorage.getItem('theme-color');
+    if (currentThemeColor !== null) {
+        $('body').addClass(currentThemeColor);
+    }
+}
+
+function switchColorTheme(theme) {
+    console.log("hello");
+    $('.form-check input').click(function() {
+        console.log(theme);
+        $('body').removeClass();
+        $('body').addClass(theme);
+        localStorage.setItem('theme-color', theme);
+    });
 }
