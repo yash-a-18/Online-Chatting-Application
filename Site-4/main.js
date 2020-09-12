@@ -15,6 +15,39 @@ search.addEventListener("input", function() {
     }
 });
 
+$(document).ready(function() {
+    // console.log("check");
+    switchColorTheme();
+});
+
+$(window).on('load', function() {
+    // console.log("check");
+    checkTheme();
+})
+
+function clck(item) {
+    console.log("object");
+    console.log(item.id);
+    switchColorTheme(item.id);
+}
+
+function checkTheme() {
+    const currentThemeColor = localStorage.getItem('theme-color');
+    if (currentThemeColor !== null) {
+        $('body').addClass(currentThemeColor);
+    }
+}
+
+function switchColorTheme(theme) {
+    console.log("hello");
+    $('.form-check input').click(function() {
+        console.log(theme);
+        $('body').removeClass();
+        $('body').addClass(theme);
+        localStorage.setItem('theme-color', theme);
+    });
+}
+
 function profile() {
     //console.log("calll");
     // console.log(document.getElementById("left").style.display="none");
@@ -174,29 +207,30 @@ function homepage() {
     for (i = 0; i < children.length; i++) {
         children[i].style.display = "none";
     }
-    e.innerHTML = `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
-    <div class="row no-gutters">
-      <div class="col-md-2 my-2 mx-2">
-          <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
-      </div>
+    e.innerHTML =
+        `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
+        <div class="row no-gutters">
+            <div class="col-md-2 my-2 mx-2">
+            <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;cursor:pointer;" onclick="profile()">
+            </div>
 
-      <div class="col-md-9 text-right my-4">
-          <div class="dropdown">
-              <a  type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-ellipsis-h fa-lg mx-2"></i>
-              </a>
-              <div class="dropdown-menu dropdown-primary">
-                  <a class="dropdown-item" href="HomePage.html"><i class="fas fa-home"></i>&nbsp Home</a>
-                  <button class="dropdown-item" onclick="profile()"><i class="fas fa-user" id="profile"></i>&nbsp Profile</button>
-                  <button class="dropdown-item" ><i class="fas fa-user-plus"></i>&nbsp Friend requests</button>
-                  <button class="dropdown-item" href="#"><i class="fas fa-users"></i>&nbsp Search Friends</button>
-                  <button class="dropdown-item" onclick="settings()"><i class="fas fa-user-cog"></i>&nbsp Settings</button>
-                  <a class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+            <div class="col-md-9 text-right my-4">
+                <div class="dropdown">
+                    <a  type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h fa-lg mx-2"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-primary">
+                        <a class="dropdown-item" href="HomePage.html"><i class="fas fa-home"></i>&nbsp Home</a>
+                        <button class="dropdown-item" onclick="profile()"><i class="fas fa-user" id="profile"></i>&nbsp Profile</button>
+                        <button class="dropdown-item" onclick="friendrequests()"><i class="fas fa-user-plus"></i>&nbsp Friend requests</button>
+                        <button class="dropdown-item" href="#"><i class="fas fa-users"></i>&nbsp Search Friends</button>
+                        <button class="dropdown-item" onclick="settings()"><i class="fas fa-user-cog"></i>&nbsp Settings</button>
+                        <a class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="card">
 <div class="row no-gutters">
@@ -454,65 +488,98 @@ function theme() {
             </div>
         </div>
     </div>
-        <div class="container" style="margin-top: 100px;font-weight:bold;">
-    <div class="alert alert-dark alert-dismissible fade show" role="alert" style="background-color: rgb(0, 0, 0, 0.2);">
-        <div class="theme-options">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" id="default-mode" name="theme" value="Default" onclick="clck(this)">
-                <label class="form-check-label">
-                    Default
-                </label><br>
-                <input class="form-check-input" type="radio" id="light-mode" name="theme" value="Light" onclick="clck(this)">
-                <label class="form-check-label">
-                    Light
-                </label><br>
-                <input class="form-check-input" type="radio" id="dark-mode" name="theme" value="Dark" onclick="clck(this)">
-                <label class="form-check-label">
-                    Dark
-                </label><br>
-                <input class="form-check-input" type="radio" id="sunlight-mode" name="theme" value="Sunlight" onclick="clck(this)">
-                <label class="form-check-label">
-                    Sunlight
-                </label>
+
+    <div class="container" style="margin-top: 100px;font-weight:bold;">
+        <div class="alert alert-dark alert-dismissible fade show" role="alert" style="background-color: rgb(0, 0, 0, 0.2);">
+            <div class="theme-options">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="default-mode" name="theme" value="Default" onclick="clck(this)">
+                    <label class="form-check-label">
+                        Default
+                    </label><br>
+                    <input class="form-check-input" type="radio" id="light-mode" name="theme" value="Light" onclick="clck(this)">
+                    <label class="form-check-label">
+                        Light
+                    </label><br>
+                    <input class="form-check-input" type="radio" id="dark-mode" name="theme" value="Dark" onclick="clck(this)">
+                    <label class="form-check-label">
+                        Dark
+                    </label><br>
+                    <input class="form-check-input" type="radio" id="sunlight-mode" name="theme" value="Sunlight" onclick="clck(this)">
+                    <label class="form-check-label">
+                        Sunlight
+                    </label>
+                </div>
+            </div>
+            <!--button type="button" class="btn btn-success my-2" onclick="change_theme()">Change Theme</button-->
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>`
+}
+
+function friendrequests() {
+    //console.log("calll");
+    // console.log(document.getElementById("left").style.display="none");
+    var e = document.getElementById("left");
+    let children = e.children;
+    console.log(children);
+    for (i = 0; i < children.length; i++) {
+        children[i].style.display = "none";
+    }
+    e.innerHTML =
+        `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
+        <div class="row no-gutters">
+            <div class="col-md-2 my-4 mx-2">
+                <a class="dark noline" onclick="homepage()" style="cursor:pointer;">
+                    <i class="fas fa-angle-double-left fa-lg"></i>
+                </a>
+            </div>
+
+            <div class="col-md my-4">
+                <h5>Friend Requests</h5>
             </div>
         </div>
-        <!--button type="button" class="btn btn-success my-2" onclick="change_theme()">Change Theme</button-->
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
     </div>
-</div>`
-}
+    <div class="card">
+		<div class="row no-gutters">
+		    <form class="form-inline my-3 mx-3">
+		        <input class="form-control mr-sm-2" style="position: relative;width: 100%;" type="search" placeholder="Search" id="searchTxt" aria-label="Search">
+		    </form>
+		</div>
+    </div>
+    
+    <div class="friend-list">
 
-$(document).ready(function() {
-    // console.log("check");
-    switchColorTheme();
-});
+        <div class="card search" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-2 my-2 mx-2">
+                    <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h6 class="card-title d-inline">Rahul</h6>
+                        <p class="card-text d-inline mx-4"><a class="noline" style="color:violet;cursor:pointer" onMouseOut="this.style.color='violet'" onMouseOver="this.style.color='red'">View</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-$(window).on('load', function() {
-    // console.log("check");
-    checkTheme();
-})
+        <div class="card search" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-2 my-2 mx-2">
+                    <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h6 class="card-title d-inline">Rahul</h6>
+                        <p class="card-text d-inline mx-4"><a class="noline" style="color:violet;cursor:pointer" onMouseOut="this.style.color='violet'" onMouseOver="this.style.color='red'">View</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-function clck(item) {
-    console.log("object");
-    console.log(item.id);
-    switchColorTheme(item.id);
-}
-
-function checkTheme() {
-    const currentThemeColor = localStorage.getItem('theme-color');
-    if (currentThemeColor !== null) {
-        $('body').addClass(currentThemeColor);
-    }
-}
-
-function switchColorTheme(theme) {
-    console.log("hello");
-    $('.form-check input').click(function() {
-        console.log(theme);
-        $('body').removeClass();
-        $('body').addClass(theme);
-        localStorage.setItem('theme-color', theme);
-    });
+    </div>
+    `
 }
