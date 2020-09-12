@@ -27,7 +27,7 @@ function profile() {
     e.innerHTML = `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
     <div class="row no-gutters">
         <div class="col-md-2 my-3 mx-3">
-            <a class="dark noline" href="HomePage.html">
+            <a class="dark noline" onclick="homepage()">
                 <i class="fas fa-angle-double-left fa-2x"></i>
            </a>
         </div>
@@ -89,7 +89,7 @@ function settings() {
     e.innerHTML = `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
     <div class="row no-gutters">
         <div class="col-md-2 my-3 mx-3">
-            <a class="dark noline" href="HomePage.html">
+            <a class="dark noline" onclick="homepage()">
                 <!--i class="fas fa-chevron-left fa-2x"></i-->
                 <!--i class="fas fa-arrow-left fa-2x"></i-->
                 <!--i class="fas fa-arrow-circle-left fa-2x"></i-->
@@ -147,4 +147,269 @@ function settings() {
         </div>
     </div>
 </div>`
+}
+
+function homepage() {
+    //console.log("calll");
+    // console.log(document.getElementById("left").style.display="none");
+    var e = document.getElementById("left");
+    let children = e.children;
+    console.log(children);
+    for (i = 0; i < children.length; i++) {
+        children[i].style.display = "none";
+    }
+    e.innerHTML = `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+          <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+
+      <div class="col-md-9 text-right my-4">
+          <div class="dropdown">
+              <a  type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-h fa-lg mx-2"></i>
+              </a>
+              <div class="dropdown-menu dropdown-primary">
+                  <a class="dropdown-item" href="HomePage.html"><i class="fas fa-home"></i>&nbsp Home</a>
+                  <button class="dropdown-item" onclick="profile()"><i class="fas fa-user" id="profile"></i>&nbsp Profile</button>
+                  <button class="dropdown-item" ><i class="fas fa-user-plus"></i>&nbsp Friend requests</button>
+                  <button class="dropdown-item" href="#"><i class="fas fa-users"></i>&nbsp Search Friends</button>
+                  <button class="dropdown-item" onclick="settings()"><i class="fas fa-user-cog"></i>&nbsp Settings</button>
+                  <button class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="card">
+<div class="row no-gutters">
+  <form class="form-inline my-3 mx-3">
+    <input class="form-control mr-sm-2" style="position: relative;width: 100%;" type="search" placeholder="Search" id="searchTxt" aria-label="Search">
+  </form>
+</div>
+</div>
+
+<div class="friend-list">
+
+  <a class="dark noline" href="chat.html">
+      <div class="card search" style="max-width: 540px;" id="card-hover">
+          <div class="row no-gutters">
+              <div class="col-md-2 my-2 mx-2">
+                  <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+              </div>
+              <div class="col-md-9">
+              <div class="card-body">
+                  <h6 class="card-title">Shree</h6>
+              </div>
+              </div>
+          </div>
+      </div>
+  </a>
+
+  <a class="dark noline" href="chat.html">
+      <div class="card" style="max-width: 540px;" id="card-hover">
+      <div class="row no-gutters">
+          <div class="col-md-2 my-2 mx-2">
+              <img src="./Images/profile_2.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+          </div>
+          <div class="col-md-9">
+          <div class="card-body">
+              <h6 class="card-title">Shreeman</h6>
+          </div>
+          </div>
+      </div>
+      </div>
+  </a>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/profile_1.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Shreemati</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Yash</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Utsav</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Devanshi</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Aastha</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Shivani</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Dhruval</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Deep</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="max-width: 540px;" id="card-hover">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-2 mx-2">
+        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h6 class="card-title">Sakshi</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>`
+}
+
+function chat() {
+    //console.log("calll");
+    // console.log(document.getElementById("left").style.display="none");
+    var e = document.getElementById("right");
+    let children = e.children;
+    console.log(children);
+    for (i = 0; i < children.length; i++) {
+        children[i].style.display = "none";
+    }
+    e.innerHTML = `<div class="card" style="max-width: auto;background-color:rgb(0,0,0,0.4);">
+    <div class="row no-gutters">
+      <div class="col-md-1 my-1 mx-1">
+        <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:60px;height: auto;">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h4 class="card-title">Shree</h4>
+        </div>
+      </div>
+      <div class="col-md-4 my-4 mx-2 text-right">
+          <i class="fas fa-search fa-lg"></i>
+      <!--/div>
+      <div class="col-md my-4 text-right"-->
+          <i class="fas fa-paperclip fa-lg mx-4"></i>
+      </div>
+      <div class="col-md my-4">
+          <div class="dropdown dropleft">
+              <a  type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-h fa-lg"></i>
+              </a>
+              <div class="dropdown-menu dropdown-primary">
+                  <a class="dropdown-item" href="HomePage.html"><i class="far fa-id-card"></i>&nbsp Contact info</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-comment-slash"></i>&nbsp Clear messages</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-user-minus"></i>&nbsp Unfriend</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-user-edit"></i>&nbsp Report</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-user-lock"></i>&nbsp Block</a>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid chat-list">
+      <div class="container chat-left my-3">
+          Hello!!
+          <span class="time-right">1:00</span>
+      </div>
+
+      <div class="container chat-right my-3">
+          Hiiii
+          <span class="time-left">1:00</span>
+      </div>
+  </div>
+
+  <div class="card align-text-bottom" style="max-width: auto;background-color:rgb(0,0,0,0.4);">
+    <div class="row no-gutters">
+      <div class="col-md-1 my-3 mx-1 text-center">
+        <i class="far fa-laugh fa-2x"></i>
+      </div>
+      <div class="col-md-7 text-center">
+        <div class="form-group my-3" style="width:750px;">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+      </div>
+      <div class="col-md-3 my-4 mx-4 text-right">
+          <i class="far fa-paper-plane fa-lg"></i>
+      </div>
+    </div>
+  </div>`
 }
