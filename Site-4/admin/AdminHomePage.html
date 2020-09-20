@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lan='en'>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="adminOCA.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<meta charset='UTF-8' />
+	<title>
+		Talk Talk : Admin Home
+	</title>
+</head>
+
+<body>
+
+	<div class="container-fluid" style="margin-top: 7px;">
+		<div class="row">
+			<div class="col-sm-4 col-md-4 col-lg-3">
+				<div class="left-box" id="left">
+
+					<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
+					  	<div class="row no-gutters">
+							<div class="col-md-2 my-2 mx-2">
+								<img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;cursor:pointer" onclick="profile()">
+							</div>
+
+							<div class="col-md-9 text-right my-4">
+								<div class="dropdown">
+									<a  type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-ellipsis-h fa-lg mx-2"></i>
+									</a>
+									<div class="dropdown-menu dropdown-primary">
+										<a class="dropdown-item" href="AdminHomePage.html"><i class="fas fa-home"></i>&nbsp Home</a>
+										<button class="dropdown-item" onclick="profile()"><i class="fas fa-user" id="profile"></i>&nbsp Profile</button>
+										<button class="dropdown-item" onclick="friendrequests()"><i class="fas fa-user-plus"></i>&nbsp Friend requests</button>
+										<button class="dropdown-item" href="#"><i class="fas fa-users"></i>&nbsp Search Friends</button>
+                                        <button class="dropdown-item" href="#"><i class="fas fa-address-book"></i>&nbsp All Users</button>
+										<button class="dropdown-item" onclick="settings()"><i class="fas fa-user-cog"></i>&nbsp Settings</button>
+										<a class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
+									</div>
+								</div>
+					    	</div>
+						</div>
+					</div>
+
+					<div class="card">
+					  <div class="row no-gutters">
+					    <form class="form-inline my-3 mx-3">
+					      <input class="form-control mr-sm-2" style="position: relative;width: 100%;" type="search" placeholder="Search" id="searchTxt" aria-label="Search">
+					    </form>
+					  </div>
+					</div>
+
+					<div class="friend-list">
+
+						<a class="dark noline" onclick="chat()">
+							<div class="card search" style="max-width: 540px;" id="card-hover">
+								<div class="row no-gutters">
+									<div class="col-md-2 my-2 mx-2">
+										<img src="../Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+									</div>
+									<div class="col-md-9">
+										<div class="card-body">
+											<h6 class="card-title">Shree</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a class="dark noline" onclick="chat()">
+							<div class="card" style="max-width: 540px;" id="card-hover">
+							<div class="row no-gutters">
+								<div class="col-md-2 my-2 mx-2">
+									<img src="../Images/profile_2.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+								</div>
+								<div class="col-md-9">
+								<div class="card-body">
+									<h6 class="card-title">Shreeman</h6>
+								</div>
+								</div>
+							</div>
+							</div>
+						</a>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/profile_1.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Shreemati</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Yash</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Utsav</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Devanshi</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Aastha</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Shivani</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Dhruval</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Deep</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div class="card" style="max-width: 540px;" id="card-hover">
+						  <div class="row no-gutters">
+						    <div class="col-md-2 my-2 mx-2">
+						      <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+						    </div>
+						    <div class="col-md-9">
+						      <div class="card-body">
+						        <h6 class="card-title">Sakshi</h6>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="right-box" id="right">
+
+				<div class="container" style="text-align: center;margin-top: 200px;font-weight: bold;">
+					Welcome!!<br>
+					Stay Connected,<br>
+					Stay Happy.
+				</div>
+					  
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<script src="adminMain.js"></script>
+</body>
+
+</html>

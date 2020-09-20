@@ -72,7 +72,7 @@ function profile() {
 
 <div class="card" style="height:220px">
     <div class="row no-gutters mx-auto my-3">
-        <img src="./Images/MyProfile.png" class="rounded-circle" alt="..." style="width:150px;height:100%;">
+        <img src="../Images/MyProfile.png" class="rounded-circle" alt="..." style="width:150px;height:100%;">
     </div>
     <a class="noline mx-auto" href="ChangePhoto.html" style="color:violet;" onMouseOut="this.style.color='violet'" onMouseOver="this.style.color='red'">Change Profile Photo</a>
 </div>
@@ -140,7 +140,7 @@ function settings() {
     <div class="card" style="max-width: 540px;" id="card-hover">
         <div class="row no-gutters">
             <div class="col-md-2 my-2 mx-2">
-                <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+                <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
             </div>
             <div class="col-md-9">
             <div class="card-body">
@@ -211,7 +211,7 @@ function homepage() {
         `<div class="card" style="max-width: 540px;background-color:rgb(0,0,0,0.4);">
         <div class="row no-gutters">
             <div class="col-md-2 my-2 mx-2">
-            <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;cursor:pointer;" onclick="profile()">
+            <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;cursor:pointer;" onclick="profile()">
             </div>
 
             <div class="col-md-9 text-right my-4">
@@ -224,6 +224,7 @@ function homepage() {
                         <button class="dropdown-item" onclick="profile()"><i class="fas fa-user" id="profile"></i>&nbsp Profile</button>
                         <button class="dropdown-item" onclick="friendrequests()"><i class="fas fa-user-plus"></i>&nbsp Friend requests</button>
                         <button class="dropdown-item" href="#"><i class="fas fa-users"></i>&nbsp Search Friends</button>
+                        <button class="dropdown-item" href="#"><i class="fas fa-address-book"></i>&nbsp All Users</button>
                         <button class="dropdown-item" onclick="settings()"><i class="fas fa-user-cog"></i>&nbsp Settings</button>
                         <a class="dropdown-item" href="Logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
                     </div>
@@ -246,7 +247,7 @@ function homepage() {
       <div class="card search" style="max-width: 540px;" id="card-hover">
           <div class="row no-gutters">
               <div class="col-md-2 my-2 mx-2">
-                  <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+                  <img src="../Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
               </div>
               <div class="col-md-9">
               <div class="card-body">
@@ -261,7 +262,7 @@ function homepage() {
       <div class="card" style="max-width: 540px;" id="card-hover">
       <div class="row no-gutters">
           <div class="col-md-2 my-2 mx-2">
-              <img src="./Images/profile_2.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+              <img src="../Images/profile_2.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
           </div>
           <div class="col-md-9">
           <div class="card-body">
@@ -275,7 +276,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/profile_1.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/profile_1.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -288,7 +289,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -301,7 +302,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -314,7 +315,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -327,7 +328,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -340,7 +341,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -353,7 +354,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -366,7 +367,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -379,7 +380,7 @@ function homepage() {
   <div class="card" style="max-width: 540px;" id="card-hover">
     <div class="row no-gutters">
       <div class="col-md-2 my-2 mx-2">
-        <img src="./Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+        <img src="../Images/MyProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
       </div>
       <div class="col-md-9">
         <div class="card-body">
@@ -404,7 +405,7 @@ function chat() {
     e.innerHTML = `<div class="card" style="max-width: auto;background-color:rgb(0,0,0,0.4);">
     <div class="row no-gutters">
       <div class="col-md-1 my-1 mx-1">
-        <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:60px;height: auto;">
+        <img src="../Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:60px;height: auto;">
       </div>
       <div class="col-md-6">
         <div class="card-body">
@@ -555,7 +556,7 @@ function friendrequests() {
         <div class="card search" style="max-width: 540px;">
             <div class="row no-gutters">
                 <div class="col-md-2 my-2 mx-2">
-                    <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+                    <img src="../Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
                 </div>
                 <div class="col-md-9">
                     <div class="card-body">
@@ -569,7 +570,7 @@ function friendrequests() {
         <div class="card search" style="max-width: 540px;">
             <div class="row no-gutters">
                 <div class="col-md-2 my-2 mx-2">
-                    <img src="./Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
+                    <img src="../Images/OtherProfile.png" class="card-img rounded-circle" alt="..." style="width:50px;height: auto;">
                 </div>
                 <div class="col-md-9">
                     <div class="card-body">

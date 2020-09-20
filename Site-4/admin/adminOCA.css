@@ -13,7 +13,6 @@ html {
 }
 
 .light-mode {
-    /* background-attachment: fixed; */
     height: 100%;
     margin: 0;
     background: #7F7FD5;
