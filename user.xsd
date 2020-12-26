@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema id="users" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="users">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="user" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="firstname" minOccurs="0" maxOccurs="unbound">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="30">
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="lastname" minOccurs="0" maxOccurs="unbound">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="30">
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="dob" minOccurs="0" maxOccurs="unbound">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="10">
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="email" minOccurs="0" maxOccurs="1">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="60">
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="mobileno" minOccurs="0" maxOccurs="unbound">
+								<xs:simpleType>
+									<xs:restriction base="xs:unsignedLong">
+										<xs:maxLength value="10">
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:string" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

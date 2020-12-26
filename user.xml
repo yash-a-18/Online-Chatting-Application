@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE users[
+<!ELEMENT users (user)*>
+<!ELEMENT user(firstname,lastname,dob,email,mobileno)>
+<!ELEMENT firstname(#PCDATA)>
+<!ELEMENT lastname(#PCDATA)>
+<!ELEMENT dob(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT mobileno(#PCDATA)>
+]>
+<users>
+<user id="id_01">
+<firstname>ABC</firstname>
+<lastname>XYZ</lastname>
+<dob>01-01-2001</dob>
+<email>ABC12345@gmail.com</email>
+<mobileno>9999999999</mobileno>
+</user>
+</users>
